@@ -1,6 +1,9 @@
 const file = require('fs')
 
 function converter() {
+
+    console.log("_start")
+
     const data = file.readFileSync("./Unhandled/list.txt", (error, data) => {
         if (error) throw error
 
@@ -17,8 +20,6 @@ function converter() {
 
     const parsed_settings = JSON.parse(settings.toString())
 
-    console.log(parsed_settings)
-
     const handled = []
 
     for (let element of parsed_data) {
@@ -30,6 +31,8 @@ function converter() {
     }
 
     file.writeFileSync("./Handled_Arrays/list.json", JSON.stringify(handled))
+
+    console.log("_finish")
 }
 
 converter()
