@@ -1,0 +1,4 @@
+{
+    "appid": 730,
+    "game_name": "<GAME_NAME>"
+}
