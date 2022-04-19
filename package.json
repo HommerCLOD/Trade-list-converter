@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "_dev",
   "license": "ISC"
 }
